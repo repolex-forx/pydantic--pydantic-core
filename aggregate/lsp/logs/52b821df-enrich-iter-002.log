@@ -1,0 +1,93 @@
+[2026-04-18T01:14:22Z] === ENRICH ITERATION 2 START | repo=pydantic/pydantic-core sha=52b821df ===
+[2026-04-18T01:14:22Z] [iter=2] PHASE START: enrich repo=pydantic/pydantic-core sha=52b821df runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52b821df-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52b821dfc304b061b3c2d528f91011229d25f0a1.nq.gz
+[2026-04-18T01:14:42Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-18T01:15:50Z] [iter=2] AST store loaded triples=4067206 load_secs=67 mem_mb=933 MB
+[2026-04-18T01:15:50Z] [iter=2] Step 2: Finding LSP targets mem_mb=933 MB
+[2026-04-18T01:15:55Z] [iter=2] LSP targets found call_sites=30437 imports=1580 extends=276 implements=159 secs=5
+[2026-04-18T01:15:59Z] [iter=2] Loaded checkpoint partial graph triples=124588
+[2026-04-18T01:16:03Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=933 MB
+[2026-04-18T01:16:20Z] [iter=2] Position index built positions=272502 nodes_with_types=354790 secs=17 mem_mb=1008 MB
+[2026-04-18T01:16:20Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1008 MB already_completed_types=[] already_completed_files=142
+[2026-04-18T01:16:20Z] [iter=2] Resolving target type target_type=call_site count=30437
+[2026-04-18T01:16:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=0 resolved=0 errors=0 current=src/input/shared.rs
+[2026-04-18T01:18:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=1 resolved=3 errors=91 current=src/serializers/filter.rs
+[2026-04-18T01:21:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=2 resolved=87 errors=218 current=src/validators/tuple.rs
+[2026-04-18T01:23:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=3 resolved=133 errors=300 current=src/validators/url.rs
+[2026-04-18T01:27:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=13.2 files_done=4 resolved=219 errors=513 current=src/serializers/type_serializers/function.rs
+[2026-04-18T01:30:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=5 resolved=301 errors=634 current=src/serializers/shared.rs
+[2026-04-18T01:32:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.6 files_done=6 resolved=332 errors=773 current=src/url.rs
+[2026-04-18T01:35:52Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=21.5 files_done=7 resolved=477 errors=913 current=src/input/input_python.rs
+[2026-04-18T01:43:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=28.7 files_done=8 resolved=738 errors=1258 current=src/serializers/type_serializers/string.rs
+[2026-04-18T01:43:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.2 files_done=9 resolved=747 errors=1285 current=src/validators/function.rs
+[2026-04-18T01:46:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=31.7 files_done=10 resolved=801 errors=1403 current=src/serializers/ob_type.rs
+[2026-04-18T01:48:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=34.2 files_done=11 resolved=862 errors=1525 current=src/validators/model.rs
+[2026-04-18T01:51:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=36.7 files_done=12 resolved=943 errors=1644 current=src/serializers/type_serializers/bytes.rs
+[2026-04-18T01:51:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=37.3 files_done=13 resolved=957 errors=1671 current=src/serializers/type_serializers/json.rs
+[2026-04-18T01:52:10Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=15 resolved=978 errors=1695 current=src/serializers/type_serializers/model.rs
+[2026-04-18T01:53:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=39.5 files_done=16 resolved=1023 errors=1776 current=src/serializers/extra.rs
+[2026-04-18T01:55:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=41.0 files_done=17 resolved=1103 errors=1848 current=src/validators/arguments_v3.rs
+[2026-04-18T02:00:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=46.1 files_done=18 resolved=1188 errors=2094 current=src/serializers/type_serializers/typed_dict.rs
+[2026-04-18T02:01:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=46.9 files_done=19 resolved=1209 errors=2130 current=src/validators/dataclass.rs
+[2026-04-18T02:05:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=51.6 files_done=20 resolved=1314 errors=2357 current=src/serializers/config.rs
+[2026-04-18T02:08:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=21 resolved=1347 errors=2481 current=src/serializers/type_serializers/tuple.rs
+[2026-04-18T02:09:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=55.2 files_done=22 resolved=1387 errors=2532 current=src/validators/complex.rs
+[2026-04-18T02:10:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=55.7 files_done=23 resolved=1394 errors=2556 current=src/validators/call.rs
+[2026-04-18T02:11:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=57.4 files_done=25 resolved=1442 errors=2636 current=src/lookup_key.rs
+[2026-04-18T02:14:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=60.2 files_done=26 resolved=1528 errors=2770 current=src/serializers/fields.rs
+[2026-04-18T02:17:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=62.8 files_done=27 resolved=1586 errors=2898 current=src/validators/int.rs
+[2026-04-18T02:18:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=64.1 files_done=28 resolved=1618 errors=2958 current=src/validators/model_fields.rs
+[2026-04-18T02:21:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=67.2 files_done=29 resolved=1683 errors=3108 current=src/validators/callable.rs
+[2026-04-18T02:23:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=69.1 files_done=31 resolved=1730 errors=3199 current=src/validators/mod.rs
+[2026-04-18T02:25:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=70.7 files_done=32 resolved=1787 errors=3274 current=src/argument_markers.rs
+[2026-04-18T02:26:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=72.6 files_done=34 resolved=1832 errors=3366 current=src/input/mod.rs
+[2026-04-18T02:27:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=73.1 files_done=36 resolved=1843 errors=3391 current=src/validators/literal.rs
+[2026-04-18T02:29:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=75.2 files_done=37 resolved=1891 errors=3491 current=src/validators/custom_error.rs
+[2026-04-18T02:31:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=77.5 files_done=40 resolved=1949 errors=3602 current=src/validators/timedelta.rs
+[2026-04-18T02:32:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=78.3 files_done=41 resolved=1968 errors=3642 current=src/serializers/type_serializers/enum_.rs
+[2026-04-18T02:33:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=79.2 files_done=42 resolved=1986 errors=3682 current=src/input/return_enums.rs
+[2026-04-18T02:36:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=82.2 files_done=43 resolved=2085 errors=3829 current=src/validators/float.rs
+[2026-04-18T02:37:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=83.5 files_done=44 resolved=2114 errors=3889 current=src/serializers/type_serializers/literal.rs
+[2026-04-18T02:38:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=84.6 files_done=45 resolved=2147 errors=3942 current=src/validators/typed_dict.rs
+[2026-04-18T02:41:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=46 resolved=2188 errors=4053 current=src/validators/json_or_python.rs
+[2026-04-18T02:42:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=88.3 files_done=49 resolved=2214 errors=4121 current=src/validators/bytes.rs
+[2026-04-18T02:43:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.0 files_done=50 resolved=2224 errors=4152 current=src/serializers/mod.rs
+[2026-04-18T02:44:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.8 files_done=51 resolved=2241 errors=4192 current=src/validators/dict.rs
+[2026-04-18T02:45:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=90.6 files_done=52 resolved=2255 errors=4231 current=src/validators/with_default.rs
+[2026-04-18T02:46:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=91.8 files_done=53 resolved=2302 errors=4285 current=src/validators/union.rs
+[2026-04-18T02:48:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=93.7 files_done=54 resolved=2357 errors=4379 current=src/serializers/type_serializers/generator.rs
+[2026-04-18T02:48:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=94.6 files_done=55 resolved=2382 errors=4421 current=src/recursion_guard.rs
+[2026-04-18T02:50:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=95.9 files_done=57 resolved=2414 errors=4486 current=src/serializers/type_serializers/datetime_etc.rs
+[2026-04-18T02:50:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=96.6 files_done=58 resolved=2416 errors=4518 current=src/validators/list.rs
+[2026-04-18T02:51:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=97.3 files_done=59 resolved=2435 errors=4549 current=src/validators/date.rs
+[2026-04-18T02:52:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=98.2 files_done=60 resolved=2460 errors=4596 current=src/validators/datetime.rs
+[2026-04-18T02:54:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=99.9 files_done=61 resolved=2512 errors=4678 current=src/validators/json.rs
+[2026-04-18T02:54:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.5 files_done=62 resolved=2522 errors=4703 current=src/validators/prebuilt.rs
+[2026-04-18T02:55:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=101.0 files_done=64 resolved=2542 errors=4731 current=src/build_tools.rs
+[2026-04-18T02:56:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=65 resolved=2568 errors=4764 current=src/validators/validation_state.rs
+[2026-04-18T02:56:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=102.4 files_done=67 resolved=2611 errors=4796 current=src/validators/chain.rs
+[2026-04-18T02:57:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=103.0 files_done=68 resolved=2619 errors=4826 current=src/validators/is_instance.rs
+[2026-04-18T02:58:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=103.7 files_done=70 resolved=2639 errors=4859 current=src/errors/line_error.rs
+[2026-04-18T02:58:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=104.6 files_done=72 resolved=2669 errors=4903 current=src/validators/is_subclass.rs
+[2026-04-18T02:59:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.5 files_done=75 resolved=2715 errors=4944 current=src/serializers/type_serializers/decimal.rs
+[2026-04-18T03:00:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=106.5 files_done=77 resolved=2736 errors=4993 current=src/serializers/type_serializers/dict.rs
+[2026-04-18T03:01:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=107.3 files_done=78 resolved=2758 errors=5032 current=src/serializers/prebuilt.rs
+[2026-04-18T03:02:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=108.0 files_done=81 resolved=2811 errors=5066 current=src/errors/location.rs
+[2026-04-18T03:03:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.0 files_done=82 resolved=2829 errors=5111 current=src/validators/set.rs
+[2026-04-18T03:03:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.5 files_done=85 resolved=2841 errors=5137 current=build.rs
+[2026-04-18T03:04:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=110.3 files_done=89 resolved=2872 errors=5177 current=src/serializers/type_serializers/definitions.rs
+[2026-04-18T03:05:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=111.0 files_done=90 resolved=2885 errors=5208 current=src/serializers/type_serializers/json_or_python.rs
+[2026-04-18T03:05:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=111.6 files_done=94 resolved=2906 errors=5238 current=src/validators/frozenset.rs
+[2026-04-18T03:07:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=112.8 files_done=98 resolved=2915 errors=5295 current=wasm-preview/worker.js
+[2026-04-18T03:08:03Z] [iter=2] Target type resolved target_type=call_site resolved=2928 errors=5337 secs=6703 mem_mb=1070 MB
+[2026-04-18T03:08:03Z] [iter=2] Resolving target type target_type=import_statement count=1580
+[2026-04-18T03:08:06Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=113.7 files_done=0 resolved=0 errors=0 current=src/serializers/errors.rs
+[2026-04-18T03:08:25Z] [iter=2] Target type resolved target_type=import_statement resolved=710 errors=0 secs=22 mem_mb=1070 MB
+[2026-04-18T03:08:25Z] [iter=2] Resolving target type target_type=extends_clause count=276
+[2026-04-18T03:08:26Z] [iter=2] Target type resolved target_type=extends_clause resolved=0 errors=0 secs=1 mem_mb=1070 MB
+[2026-04-18T03:08:26Z] [iter=2] Resolving target type target_type=implements_clause count=159
+[2026-04-18T03:08:38Z] [iter=2] HEARTBEAT target_type=implements_clause elapsed_min=114.3 files_done=1 resolved=2 errors=0 current=src/serializers/type_serializers/json_or_python.rs
+[2026-04-18T03:08:44Z] [iter=2] Target type resolved target_type=implements_clause resolved=97 errors=0 secs=18 mem_mb=1070 MB
+[2026-04-18T03:09:20Z] [iter=2] Step 5: Writing final enrichment file triples=248239
+[2026-04-18T03:09:24Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/52b821dfc304b061b3c2d528f91011229d25f0a1.nq.gz size_kb=5573
+[2026-04-18T03:09:24Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-18T03:09:24Z] [iter=2] PHASE END: enrich elapsed_s=6903 elapsed_min=115.0 total_triples=248239
